@@ -14,7 +14,7 @@ export const MediaListQuery = gql`
 
 export const MediaQuery = gql `
   query Media ($id : Int){
-    media(id: $id) {
+    Media(id: $id) {
       title {
         romaji
         english

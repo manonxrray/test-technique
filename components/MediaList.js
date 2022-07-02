@@ -1,33 +1,32 @@
-import { useState, useEffect } from "react";
 import Media from "./Media";
 import { useQuery } from "@apollo/client";
-import { MediaListQuery, MediaQuery } from "../graphql/query/media";
+import { MediaListQuery} from "../graphql/query/media";
+
+const Loader = () => {
+  return <p>Loading</p>;
+};
 
 const MediaList = () => {
-  const [medias, setMedias] = useState([]);
-  let mediaData = [];
+  const medias = [];
 
   const { loading, data } = useQuery(MediaListQuery, {
     variables: { userId : 5916149 }
   });
-  
-  useEffect(() => {
-    let entries = data.MediaListCollection.lists[0].entries;
 
-    for (let i =0; i < entries.length; i++) {
-      mediaData.push(entries[i].mediaId)
-    };
+  if (loading) return <Loader />
 
-    setMedias(mediaData);
+  let entries = data.MediaListCollection.lists[0].entries;
 
-    console.log("🚀 ~ file: MediaList.js ~ line 8 ~ MediaList ~ medias", medias)
-    
-  }, []);
+  for (let i =0; i < entries.length; i++) {
+    medias.push(entries[i].mediaId)
+  };
+
+  console.log("🚀 ~ file: MediaList.js ~ line 25 ~ MediaList ~ medias", medias);
 
   return (
     <div>
       {Object.values(medias).map((media) => {
-        return <Media />
+        return <Media key={media} mediaId={media}/>
       })}
     </div>
   )

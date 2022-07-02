@@ -10,7 +10,6 @@ export const DefaultComponent = () => {
         width={300}
         height={180}
       />
-      <h1>Le peu d'animés que Manon a regardés</h1>
       <MediaList />
     </div>
   )
