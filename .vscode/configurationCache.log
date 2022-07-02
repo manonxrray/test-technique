@@ -1,0 +1,1 @@
+{"buildTargets":["install","migrate","new-migration","node-sh","python-sh","restart","start","stop"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

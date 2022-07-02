@@ -1,4 +1,5 @@
 import Image from "next/image";
+import MediaList from "./MediaList";
 
 export const DefaultComponent = () => {
   return (
@@ -9,26 +10,8 @@ export const DefaultComponent = () => {
         width={300}
         height={180}
       />
-      <h1>Hello world ! 👋🏻</h1>
-      <p>
-        Bienvenue sur le test technique SensCritique 🎉
-      </p>
-      <style jsx>{`
-        h1 {
-          font-size: 4em;
-          font-weight: bold;
-          text-align: center;
-          line-height: 4em;
-          vertical-align: middle;
-        }
-        p {
-          font-weight: bold;
-          text-align: center;
-          font-size: 2em;
-        }
-        `
-      }
-      </style>
+      <h1>Le peu d'animés que Manon a regardés</h1>
+      <MediaList />
     </div>
   )
 }
