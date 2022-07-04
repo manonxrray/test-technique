@@ -43,4 +43,10 @@ def connect_to_database():
 """
 Ajouter votre logique en dessous ⬇️
 """
+co = connect_to_database()
+cur = co.cursor()
+cur.execute(
+    "SELECT * from anime")
+for i in cur:
+    print(i)
 print("Hello world ! 👋🏻")

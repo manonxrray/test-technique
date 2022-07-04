@@ -1,23 +1,27 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory `/Users/manon/Documents/Code/test-technique'
+make: Entering directory `/Users/manon/Documents/Code/toto/test-technique'
 /Library/Developer/CommandLineTools/usr/bin/make start
-make[1]: Entering directory `/Users/manon/Documents/Code/test-technique'
+make[1]: Entering directory `/Users/manon/Documents/Code/toto/test-technique'
 docker-compose up -d
-make[1]: Leaving directory `/Users/manon/Documents/Code/test-technique'
+make[1]: Leaving directory `/Users/manon/Documents/Code/toto/test-technique'
 docker-compose run --rm node npm install
 /Library/Developer/CommandLineTools/usr/bin/make migrate
-make[1]: Entering directory `/Users/manon/Documents/Code/test-technique'
+make[1]: Entering directory `/Users/manon/Documents/Code/toto/test-technique'
 docker-compose run --rm node npx sequelize-cli db:migrate
-make[1]: Leaving directory `/Users/manon/Documents/Code/test-technique'
+make[1]: Leaving directory `/Users/manon/Documents/Code/toto/test-technique'
 /Library/Developer/CommandLineTools/usr/bin/make restart
-make[1]: Entering directory `/Users/manon/Documents/Code/test-technique'
+make[1]: Entering directory `/Users/manon/Documents/Code/toto/test-technique'
 /Library/Developer/CommandLineTools/usr/bin/make stop && /Library/Developer/CommandLineTools/usr/bin/make start
-make[2]: Entering directory `/Users/manon/Documents/Code/test-technique'
+ 
+make[2]: Entering directory `/Users/manon/Documents/Code/toto/test-technique'
 docker-compose down
-make[2]: Leaving directory `/Users/manon/Documents/Code/test-technique'
-make[2]: Entering directory `/Users/manon/Documents/Code/test-technique'
+make[2]: Leaving directory `/Users/manon/Documents/Code/toto/test-technique'
+ 
+make[2]: Entering directory `/Users/manon/Documents/Code/toto/test-technique'
 docker-compose up -d
-make[2]: Leaving directory `/Users/manon/Documents/Code/test-technique'
-make[1]: Leaving directory `/Users/manon/Documents/Code/test-technique'
-make: Leaving directory `/Users/manon/Documents/Code/test-technique'
+make[2]: Leaving directory `/Users/manon/Documents/Code/toto/test-technique'
+ 
+make[1]: Leaving directory `/Users/manon/Documents/Code/toto/test-technique'
+ 
+make: Leaving directory `/Users/manon/Documents/Code/toto/test-technique'
  
