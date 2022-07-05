@@ -5,10 +5,10 @@ export const DefaultComponent = () => {
   return (
     <div className={"hello-world"}>
       <Image
-        src={"/images/senscritique.png"}
+        src={"/images/altlogo.png"}
         alt={"logo"}
-        width={300}
-        height={180}
+        width={500}
+        height={280}
       />
       <MediaList />
     </div>
