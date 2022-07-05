@@ -21,7 +21,7 @@ const MediaList = () => {
     medias.push(entries[i].mediaId)
   };
 
-  console.log("🚀 ~ file: MediaList.js ~ line 25 ~ MediaList ~ medias", medias);
+  console.log("🚀 ~ file: MediaList.js ~ line 24 ~ MediaList ~ medias", medias);
 
   return (
     <div>

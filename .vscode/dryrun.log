@@ -12,16 +12,12 @@ make[1]: Leaving directory `/Users/manon/Documents/Code/toto/test-technique'
 /Library/Developer/CommandLineTools/usr/bin/make restart
 make[1]: Entering directory `/Users/manon/Documents/Code/toto/test-technique'
 /Library/Developer/CommandLineTools/usr/bin/make stop && /Library/Developer/CommandLineTools/usr/bin/make start
- 
 make[2]: Entering directory `/Users/manon/Documents/Code/toto/test-technique'
 docker-compose down
 make[2]: Leaving directory `/Users/manon/Documents/Code/toto/test-technique'
- 
 make[2]: Entering directory `/Users/manon/Documents/Code/toto/test-technique'
 docker-compose up -d
 make[2]: Leaving directory `/Users/manon/Documents/Code/toto/test-technique'
- 
 make[1]: Leaving directory `/Users/manon/Documents/Code/toto/test-technique'
- 
 make: Leaving directory `/Users/manon/Documents/Code/toto/test-technique'
  

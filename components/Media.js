@@ -7,7 +7,6 @@ const Loader = () => {
 
 const Media = ( mediaId ) => {
   const ID = Object.entries(mediaId)[0][1];
-  console.log("🚀 ~ file: Media.js ~ line 6 ~ Media ~ ID", ID);
 
   const { loading, data } = useQuery(MediaQuery, {
     variables: { id: ID }
